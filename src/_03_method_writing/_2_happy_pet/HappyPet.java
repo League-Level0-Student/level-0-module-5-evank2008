@@ -53,34 +53,34 @@ else {
 				int ballT = ran.nextInt(10);
 				switch (ballT) {
 				case 0:
-					 ball = "a tennis ball.";
+					 ball = "a tennis ball";
 					break;
 				case 1:
-					ball = "a ball of yarn.";
+					ball = "a ball of yarn";
 					break;
 				case 2:
-					ball = "a meatball.";
+					ball = "a meatball";
 					break;
 				case 3:
-					ball = "a bowling ball.";
+					ball = "a bowling ball";
 					break;
 				case 4:
-					ball = "a baseball.";
+					ball = "a baseball";
 					break;
 				case 5:
-					ball = "a cake pop without the stick.";
+					ball = "a cake pop without the stick";
 					break;
 				case 6:
-					ball = "a pickled egg.";
+					ball = "a pickled egg";
 					break;
 				case 7:
-					ball = "your neighbor's severed head.";
+					ball = "your neighbor's severed head";
 					break;
 				case 8:
-					ball = "an eyeball.";
+					ball = "an eyeball";
 					break;
 				case 9:
-					ball = "a ball-peen hammer.";
+					ball = "a ball-peen hammer";
 					break;
 					
 				}
