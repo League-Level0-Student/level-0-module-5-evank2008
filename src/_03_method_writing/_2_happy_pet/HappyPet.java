@@ -14,7 +14,9 @@ public class HappyPet {
 		String cPronoun = null;
 		String p2 = null;
 		String cP2 = null;
+		String p3 = null;
 		String q = null;
+		String petM = null;
 String petType = JOptionPane.showInputDialog("What kind of pet do you want to buy?");
 String petName = JOptionPane.showInputDialog("What do you want to name your new " + petType + "?");
 Random ran = new Random();
@@ -26,9 +28,11 @@ if(sex) {
 	pronoun = "he";
 	cP2 = "His";
 	p2 = "his";
+	p3 = "him";
 	JOptionPane.showMessageDialog(null, "You got a new pet " + petType + "! It's a boy! \n You decide to name him " + petName + ".");
 }
 else {
+	p3 = "her";
 	pronoun = "she";
 	p2 = "her";
 	cPronoun = "She";
@@ -46,7 +50,32 @@ else {
 
 			switch (task) {
 			case 0:
-				System.out.println("0");
+				//pet
+				int petT = ran.nextInt(4);
+				switch(petT) {
+				case 0:
+					 petM = "scratched " + p3 + " behind the ears.";
+					break;
+				case 1:
+					 petM = "patted " + p2 + " head.";
+					break;
+				case 2:
+					petM = "rubbed " + petName + "'s belly.";
+					break;
+				case 3:
+					petM = "picked " + p3 + " up and rubbed " + p3 + " all over.";
+					break;
+				}
+				int petH = ran.nextInt(5);
+				int petG = (petH-2)*2;
+				if(petG >= 0) {
+				JOptionPane.showMessageDialog(null, "You petted " + petName + " and " + petM + "\n Happiness + " + petG);
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "You petted " + petName + " and " + petM + "\n Happiness " + petG);
+				}
+				happinessLevel += petG;
+				
 				break;
 			case 1:
 				//throw ball
